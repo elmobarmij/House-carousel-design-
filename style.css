@@ -1,0 +1,58 @@
+* {
+  font-family: "motserrat", sans-serif;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f1fbff;
+}
+.carousel-item {
+  min-height: 300px;
+}
+.carousel-caption {
+  transform: translate(-50%, -50%);
+  top: 50% !important;
+  left: 50% !important;
+  right: 0 !important;
+  bottom: 0 !important;
+  z-index: 2;
+}
+.carousel-caption h5 {
+  font-size: 45px;
+  letter-spacing: 2px;
+}
+.carousel-caption p {
+  font-size: 18px;
+  width: 60%;
+}
+.carousel-inner::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+.navbar-nav a {
+  font-size: 15px;
+}
+.navbar-brand {
+  font-size: 25px;
+  letter-spacing: 2px;
+}
+.navbar-toggler {
+  box-shadow: none !important;
+}
+
+@media screen and (max-width: 767px) {
+  .carousel-caption h5 {
+    font-size: 28px;
+  }
+  .carousel-caption p {
+    width: 100%;
+    font-size: 14px;
+  }
+}
